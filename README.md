@@ -7,6 +7,9 @@ See License
 This tool will create a .rsc file for all of your MikroTik devices that are assigned to a network site in Sonar. It will also create a log file that shows the result for each attempt of pulling the backups.
 
 # Prerequisites
+A Sonar v.2 Instance
+(Will not work with v.1, I do not have a v.1 instance to test any code against)
+
 Python 3.7 or greater
 
 Python Modules: paramiko, os, datetime, socket, pandas, gql
