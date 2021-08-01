@@ -3,8 +3,8 @@ This tool was made specifically for the use of my company and I will not take re
 
 See License
 
-# Sonar-Tik-Backup
-This tool will create a .rsc file for all of your MikroTik devices that are assigned to a network site in Sonar. It will also create a log file that shows the result for each attempt of pulling the backups.
+# Sonar v.2-Tik-Backup
+This tool will create a .rsc file for all of your MikroTik devices that are assigned to a network site in Sonar v.2. It will also create a log file that shows the result for each attempt of pulling the backups.
 
 # Prerequisites
 A Sonar v.2 Instance
@@ -14,16 +14,16 @@ Python 3.7 or greater
 
 Python Modules: paramiko, os, datetime, socket, pandas, gql
 
-The machine that you run this on needs to be able to reach your network and your Sonar instance.
+The machine that you run this on needs to be able to reach your network and your Sonar v.2 instance.
 
-The MikroTik devices in Sonar need to be assigned to a network site, have an ip assignment with a description (I use the device name for the description), and a "deployment type".
+The MikroTik devices in Sonar v.2 need to be assigned to a network site, have an ip assignment with a description (I use the device name for the description), and a "deployment type".
 
 # Setup
 Line 12 --> Enter the top directory that you want the files to be created in.
 
-Line 30 --> Enter your sonar instance name.
+Line 30 --> Enter your Sonar v.2 instance name.
 
-Line 31 --> Eneter your really long sonar token.
+Line 31 --> Eneter your really long Sonar v.2 token.
 
 Line 35 --> Enter the username for your MikroTik devices.
 
