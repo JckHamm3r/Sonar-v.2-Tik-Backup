@@ -115,17 +115,9 @@ for d in devices['network_sites']['entities']:
                     stdin, stdout, stderr = ssh.exec_command(command)
                     lines = stdout.readlines()
                     
-                    ### Create sire directory if it doesnt exist ###
+
                     site_dir = f"{main_dir}/{d['network_site']}"
-                    if not os.path.exists(site_dir):
-                        os.makedirs(site_dir)
-                    
-                    ### Create role directory if it doesnt exist ###
                     role_dir = f"{site_dir}/{i['deployment_type']['deployment_type']}"
-                    if not os.path.exists(role_dir):
-                        os.makedirs(role_dir)
-                    
-                    ### Create device name directory if it doesnt exist ###
                     name_dir =f"{role_dir}/{i['ip_assignments']['entities'][0]['device_name']}"
                     if not os.path.exists(name_dir):
                         os.makedirs(name_dir)
