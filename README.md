@@ -29,6 +29,8 @@ Line 35 --> Enter the username for your MikroTik devices.
 
 Line 36 --> Enter the password for your MikroTik devices.
 
+Line 101 --> Change "MikroTik" to however you have the manufacturer spelled for your MikroTik devices in your Sonar v.2 instance.
+
 Line 137 --> Change "30" to the number of days worth of backups that you want to keep.
 
 # Customization
